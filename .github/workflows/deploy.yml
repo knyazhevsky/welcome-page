@@ -38,3 +38,13 @@ jobs:
           tags: |
             ghcr.io/knyazhevsky/${{ github.event.repository.name }}:latest
             ghcr.io/knyazhevsky/${{ github.event.repository.name }}:${{ github.sha }}
+      - name: Deploy
+        uses: appleboy/ssh-action@v1
+        with:
+          host: knyazhevsky.dev
+          username: boris
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /opt/projects/server-config/apps/welcome-page
+            docker compose pull
+            docker compose up -d
