@@ -1,0 +1,7 @@
+services:
+  welcome-page:
+    build: .
+    container_name: welcome-page
+    restart: unless-stopped
+    ports:
+      - "3000:80"
