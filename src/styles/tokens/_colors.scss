@@ -1,0 +1,13 @@
+$color-background: #0f0f10;
+$color-surface: #161618;
+$color-text-primary: #f2f2f2;
+$color-text-secondary: #6d6d6d;
+$color-accent: #77e8c8;
+
+:root {
+  --color-background: #{$color-background};
+  --color-surface: #{$color-surface};
+  --color-text-primary: #{$color-text-primary};
+  --color-text-secondary: #{$color-text-secondary};
+  --color-accent: #{$color-accent};
+}

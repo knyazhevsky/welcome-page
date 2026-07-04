@@ -1,14 +1,15 @@
+import js from '@eslint/js'
 import { defineConfig, globalIgnores } from 'eslint/config'
 import globals from 'globals'
-import js from '@eslint/js'
 import pluginVue from 'eslint-plugin-vue'
-import pluginOxlint from 'eslint-plugin-oxlint'
 import skipFormatting from 'eslint-config-prettier/flat'
+import tseslint from 'typescript-eslint'
+import vueParser from 'vue-eslint-parser'
 
 export default defineConfig([
   {
     name: 'app/files-to-lint',
-    files: ['**/*.{vue,js,mjs,jsx}'],
+    files: ['**/*.{vue,js,mjs,jsx,ts,tsx}'],
   },
 
   globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
@@ -22,9 +23,29 @@ export default defineConfig([
   },
 
   js.configs.recommended,
+  ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/essential'],
 
-  ...pluginOxlint.buildFromOxlintConfigFile('.oxlintrc.json'),
+  {
+    files: ['**/*.vue'],
+    languageOptions: {
+      parser: vueParser,
+      parserOptions: {
+        parser: tseslint.parser,
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+      },
+    },
+  },
+
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
+  },
 
   skipFormatting,
 ])

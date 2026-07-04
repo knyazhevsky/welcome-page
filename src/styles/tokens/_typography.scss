@@ -1,0 +1,21 @@
+$font-family-base: "Inter", system-ui, sans-serif;
+
+:root {
+  --font-family-base: #{$font-family-base};
+  --font-size-h1: 64px;
+  --line-height-h1: 72px;
+  --font-weight-h1: 700;
+  --font-size-h2: 28px;
+  --line-height-h2: 36px;
+  --font-weight-h2: 600;
+  --font-size-h3: 20px;
+  --line-height-h3: 28px;
+  --font-weight-h3: 600;
+  --font-size-body: 16px;
+  --line-height-body: 24px;
+  --font-weight-body: 400;
+  --font-size-small: 14px;
+  --line-height-small: 20px;
+  --font-size-caption: 12px;
+  --line-height-caption: 16px;
+}

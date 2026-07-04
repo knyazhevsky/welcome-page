@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
+    "type-check": "vue-tsc --noEmit",
     "lint": "run-s \"lint:*\"",
-    "lint:oxlint": "oxlint . --fix",
     "lint:eslint": "eslint . --fix --cache",
+    "lint:stylelint": "stylelint \"src/**/*.{css,scss,vue}\" --fix",
     "format": "prettier --write --experimental-cli src/"
   },
   "dependencies": {
@@ -19,18 +20,25 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/node": "^26.1.0",
     "@vitejs/plugin-vue": "^6.0.7",
+    "@vue/tsconfig": "^0.9.1",
     "eslint": "^10.5.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-oxlint": "~1.69.0",
     "eslint-plugin-vue": "~10.9.2",
     "globals": "^17.6.0",
     "npm-run-all2": "^9.0.2",
-    "oxlint": "~1.69.0",
-    "prettier": "3.8.4",
+    "prettier": "3.9.4",
+    "sass-embedded": "^1.100.0",
+    "stylelint": "^16.26.1",
+    "stylelint-config-recommended-vue": "^1.6.1",
+    "stylelint-config-standard-scss": "^16.0.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.1",
     "vite": "^8.0.16",
     "vite-plugin-vue-devtools": "^8.1.2",
-    "vue-eslint-parser": "^10.4.1"
+    "vue-eslint-parser": "^10.4.1",
+    "vue-tsc": "^3.3.6"
   },
   "engines": {
     "node": "^22.18.0 || >=24.12.0"

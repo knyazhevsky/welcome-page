@@ -1,0 +1,12 @@
+:root {
+  --container-width: 1000px;
+  --section-padding-y: var(--spacing-96);
+  --page-padding-x: 24px;
+  --grid-columns-desktop: 12;
+  --grid-columns-tablet: 8;
+  --grid-gap: 24px;
+  --breakpoint-mobile-max: 767px;
+  --breakpoint-tablet-min: 768px;
+  --breakpoint-tablet-max: 1439px;
+  --breakpoint-desktop-min: 1440px;
+}

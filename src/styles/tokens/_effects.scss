@@ -1,0 +1,13 @@
+:root {
+  --border-radius-6: 6px;
+  --border-radius-12: 12px;
+  --border-radius-16: 16px;
+  --border-radius-24: 24px;
+  --box-shadow-card: 0 4px 24px rgb(0 0 0 / 40%);
+  --box-shadow-hover: 0 8px 32px rgb(0 0 0 / 50%);
+  --transition-duration: 300ms;
+  --transition-timing-function: ease;
+  --transition-base: var(--transition-duration) var(--transition-timing-function);
+  --focus-outline-color: var(--color-accent);
+  --focus-outline-offset: 2px;
+}

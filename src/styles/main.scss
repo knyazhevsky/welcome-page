@@ -1,0 +1,46 @@
+@use "./variables";
+@use "./normalize";
+@use "./mixins";
+@use "./typography";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
+}
+
+a {
+  color: var(--color-accent);
+  transition: color var(--transition-base);
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
