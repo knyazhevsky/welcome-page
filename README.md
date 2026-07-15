@@ -1,44 +1,40 @@
-# welcome-page
+# Personal website
 
-This template should help get you started developing with Vue 3 in Vite.
+Personal website of Boris Knyazhevsky, built as a place to introduce myself and share what I am currently learning and building.
 
-## Recommended IDE Setup
+## Stack
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Vue 3
+- TypeScript
+- SCSS
+- Vite
+- Docker
+- Nginx
 
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Local development
 
 ```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+npm ci
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Production build
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Docker
+
+```sh
+docker compose up --build -d
+```
+
+The container serves the production build at `http://localhost:3000`.
+
+## Checks
 
 ```sh
 npm run lint
+npm run type-check
 ```

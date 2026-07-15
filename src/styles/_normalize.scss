@@ -37,8 +37,8 @@ body,
 }
 
 :where(fieldset[class]) {
-  padding: 0;
   border: none;
+  padding: 0;
 }
 
 /**
@@ -59,7 +59,7 @@ body,
   чтобы избежать взаимодействие с более сложным селектором
  */
 p {
-  --paragraphMarginBottom: 24px;
+  --paragraph-margin-bottom: 24px;
 
   margin-block: 0;
 }
@@ -69,7 +69,7 @@ p {
   который расположен не последним среди своих соседних элементов
  */
 p:where(:not([class], :last-child)) {
-  margin-bottom: var(--paragraphMarginBottom);
+  margin-bottom: var(--paragraph-margin-bottom);
 }
 
 /**
@@ -78,8 +78,8 @@ p:where(:not([class], :last-child)) {
 img,
 video {
   display: block;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 /**
@@ -100,28 +100,28 @@ html {
   height: 100%;
 
   /**
+    Плавный скролл
+   */
+  scroll-behavior: smooth;
+
+  /**
     Убираем скачок интерфейса по горизонтали
     при появлении / исчезновении скроллбара
    */
   scrollbar-gutter: stable;
-
-  /**
-    Плавный скролл
-   */
-  scroll-behavior: smooth;
 }
 
 body {
+  /**
+    Унифицированный интерлиньяж
+   */
+  line-height: 1.5;
+
   /**
     Пригодится в большинстве ситуаций
     (когда, например, нужно будет "прижать" футер к низу сайта)
    */
   min-height: 100%;
-
-  /**
-    Унифицированный интерлиньяж
-   */
-  line-height: 1.5;
 }
 
 /**
@@ -151,7 +151,7 @@ button {
   (за исключением тех, у которых уже указан
   атрибут fill со значением 'none' или начинается с 'url')
  */
-:where([fill]:not([fill="none"], [fill^="url"])) {
+:where([fill]:not([fill='none'], [fill^='url'])) {
   fill: currentcolor;
 }
 
@@ -160,7 +160,7 @@ button {
   (за исключением тех, у которых уже указан
   атрибут stroke со значением 'none')
  */
-:where([stroke]:not([stroke="none"], [stroke^="url"])) {
+:where([stroke]:not([stroke='none'], [stroke^='url'])) {
   stroke: currentcolor;
 }
 
@@ -189,7 +189,7 @@ svg * {
   ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }

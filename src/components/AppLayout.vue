@@ -15,15 +15,16 @@ import NavBar from './NavBar.vue'
 
 <style lang="scss" scoped>
 .app-layout {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  max-width: var(--container-width);
-  margin: 0 auto;
-  width: 100%;
   background-color: var(--color-surface);
   border: var(--main-border);
   border-radius: var(--border-radius-24);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: var(--container-width);
+  overflow: visible;
+  width: 100%;
 }
 
 .main {

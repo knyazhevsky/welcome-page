@@ -1,7 +1,10 @@
+.git
+.github
 node_modules
 dist
-.git
-.gitignore
-Dockerfile
-docker-compose.yml
+temp
+*.log
+.env
+.env.*
 README.md
+THIRD_PARTY_NOTICES.md

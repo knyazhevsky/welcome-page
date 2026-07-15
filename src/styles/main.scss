@@ -1,37 +1,40 @@
-@use "./variables";
-@use "./normalize";
-@use "./mixins";
-@use "./typography";
+@use './variables';
+@use './normalize';
+@use './mixins';
+@use './typography';
 
 html,
 body {
-  height: 100%;
   width: 100%;
+}
+
+html {
+  min-height: 100%;
 }
 
 #app {
   display: flex;
-  flex-direction: column;
   flex: 1;
+  flex-direction: column;
   width: 100%;
 }
 
 .container {
-  max-width: var(--container-width);
   margin: 0 auto;
+  max-width: var(--container-width);
   padding: 0 var(--container-padding);
   width: 100%;
 }
 
 body {
-  padding: var(--spacing-48) 0;
-  min-height: 100vh;
-  font-family: var(--font-family-base);
   background-color: var(--color-background);
   color: var(--color-text-primary);
   display: flex;
-  flex-direction: column;
   flex: 1;
+  flex-direction: column;
+  font-family: var(--font-family-base);
+  min-height: 100vh;
+  padding: var(--spacing-48) 0;
   transition:
     background-color var(--transition-base),
     color var(--transition-base);
@@ -39,8 +42,8 @@ body {
 
 a {
   color: var(--color-accent);
-  transition: color var(--transition-base);
   text-decoration: none;
+  transition: color var(--transition-base);
 
   &:hover {
     text-decoration: underline;

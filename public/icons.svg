@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="monitor-cog" viewBox="0 0 24 24">
+    <path d="M12 17v4" />
+    <path d="m14.305 7.53.923-.382" />
+    <path d="m15.228 4.852-.923-.383" />
+    <path d="m16.852 3.228-.383-.924" />
+    <path d="m16.852 8.772-.383.923" />
+    <path d="m19.148 3.228.383-.924" />
+    <path d="m19.53 9.696-.382-.924" />
+    <path d="m20.772 4.852.924-.383" />
+    <path d="m20.772 7.148.924.383" />
+    <path d="M22 13v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7" />
+    <path d="M8 21h8" />
+    <circle cx="18" cy="6" r="3" />
+  </symbol>
+
+  <symbol id="container" viewBox="0 0 24 24">
+    <path d="M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z" />
+    <path d="M10 21.9V14L2.1 9.1" />
+    <path d="m10 14 11.9-6.9" />
+    <path d="M14 19.8v-8.1" />
+    <path d="M18 17.5V9.4" />
+  </symbol>
+
+  <symbol id="server" viewBox="0 0 24 24">
+    <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+    <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+    <line x1="6" x2="6.01" y1="6" y2="6" />
+    <line x1="6" x2="6.01" y1="18" y2="18" />
+  </symbol>
+
+  <symbol id="bot" viewBox="0 0 24 24">
+    <path d="M12 8V4H8" />
+    <rect width="16" height="12" x="4" y="8" rx="2" />
+    <path d="M2 14h2" />
+    <path d="M20 14h2" />
+    <path d="M15 13v2" />
+    <path d="M9 13v2" />
+  </symbol>
+
+  <symbol id="arrow-right" viewBox="0 0 24 24">
+    <path d="M5 12h14" />
+    <path d="m12 5 7 7-7 7" />
+  </symbol>
+</svg>

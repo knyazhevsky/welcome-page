@@ -1,10 +1,7 @@
 <template>
   <header class="hdr">
     <nav class="navbar">
-      <ul class="navbar__links text-body">
-        <li class="navbar__link"><a href="#">About</a></li>
-        <li class="navbar__link"><a href="#">Contact</a></li>
-      </ul>
+      <ul class="navbar__links text-body"></ul>
     </nav>
   </header>
 </template>
@@ -15,18 +12,18 @@
 }
 
 .navbar {
-  margin-left: auto;
-  height: var(--navbar-height);
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
+  display: flex;
+  height: var(--navbar-height);
+  justify-content: flex-end;
+  margin-left: auto;
 
   &__links {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
     gap: var(--spacing-8);
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   &__link {

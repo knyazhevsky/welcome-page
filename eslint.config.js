@@ -36,6 +36,16 @@ export default defineConfig([
         sourceType: 'module',
       },
     },
+    rules: {
+      'vue/attributes-order': [
+        'error',
+        {
+          alphabetical: true,
+          sortLineLength: false,
+          ignoreVBindObject: true,
+        },
+      ],
+    },
   },
 
   {
